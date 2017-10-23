@@ -1,0 +1,1 @@
+add_executable(kvaternion kvaternion.cpp kvaternion.h kvaternion_test.cpp)
