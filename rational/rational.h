@@ -1,7 +1,6 @@
 #ifndef RATIONAL_H
 #define RATIONAL_H
 #include <iosfwd>
-#include <iostream>
 
 struct Rational
 {
