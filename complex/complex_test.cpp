@@ -46,6 +46,5 @@ int main()
 	Complex f = e + d;
 	Complex g = e - d;
 	cout << "d = " << d << endl << "e = " << e << endl << "d + e = " << f << endl << "e - d = " << g << endl;
-	system("pause");
 	return 0;
 }
