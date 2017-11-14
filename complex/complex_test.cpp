@@ -11,8 +11,25 @@ int main()
 	testParse("{8.9,9}");
 	testParse("{8.9, 9}");
 	testParse("{8.9,9");
-	Complex x = Complex(2, 3);
-	cout << "z = " << z << endl << "x = " << x << endl;
+	Complex x = Complex(8, 0.0000001);
+	Complex y = Complex(8, 0.00000001);
+	cout << "z = " << z << endl << "x = " << x << endl << "y = " << y << endl;
+	if (x == z)
+	{
+		cout << "x == z" << endl;
+	}
+	else
+	{
+		cout << "x != z" << endl;
+	}
+	if (z == y)
+	{
+		cout << "z == y" << endl;
+	}
+	else
+	{
+		cout << "z != y" << endl;
+	}
 	x += z;
 	cout << "x += z = " << x << endl;
 	Complex a = Complex(4, 5);
