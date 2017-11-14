@@ -8,6 +8,26 @@ int main()
 	testParse("(1,2,4)");
 	testParse("5,6,7)");
 	Vec3d z;
+	z = Vec3d(1, 1, 1);
+	Vec3d y(1.0001, 1, 1);
+	Vec3d x(1.001, 1, 1);
+	cout << "z = " << z << endl << "y = " << y << endl << "x = " << x << endl;
+	if (z == y)
+	{
+		cout << "z == y" << endl;
+	}
+	else
+	{
+		cout << "z != y" << endl;
+	}
+	if (z == x)
+	{
+		cout << "z == x" << endl;
+	}
+	else
+	{
+		cout << "z != x" << endl;
+	}
 	Vec3d a(2.5, 3.6, 4.6);
 	cout << "a = " << a << endl;
 	Vec3d b(a);
