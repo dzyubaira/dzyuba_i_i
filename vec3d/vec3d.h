@@ -1,7 +1,6 @@
 #ifndef VEC3D_H
 #define VEC3D_H
 #include <iosfwd>
-#include <iostream>
 
 struct Vec3d
 {
@@ -11,7 +10,7 @@ public:
 	Vec3d(const double xv, const double yv, const double zv);
 	Vec3d(const Vec3d& v);
 
-	bool operator==(const Vec3d& v) const { return (x == v.x) && (y == v.y) && (z == v.z); }
+	bool operator==(const Vec3d& v) const { return (abs(x - v.x) < pow(10,-4)) && (abs(y - v.y) < pow(10,-4)) && (abs(z - v.z) < pow(10,-4)); }
 	bool operator!=(const Vec3d& v) const { return !operator==(v); }
 
 	Vec3d& operator=(const Vec3d v);
