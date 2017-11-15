@@ -1,7 +1,6 @@
 #ifndef VEC3DT_H
 #define VEC3DT_H
 #include <iosfwd>
-#include <iostream>
 
 template <typename T>
 struct Vec3dT
@@ -22,7 +21,7 @@ public:
 	{
 	}
 
-	bool operator==(const Vec3dT& v) const { return (x == v.x) && (y == v.y) && (z == v.z); }
+	bool operator==(const Vec3dT& v) const { return (abs(x - v.x) < pow(10, -4)) && (abs(y - v.y) < pow(10, -4)) && (abs(z - v.z) < pow(10, -4)); }
 	bool operator!=(const Vec3dT& v) const { return !operator==(v); }
 
 	Vec3dT& operator=(const Vec3dT v)
