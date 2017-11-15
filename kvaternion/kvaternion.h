@@ -1,7 +1,6 @@
 #ifndef KVATERNION_H
 #define KVATERNION_H
 #include <iosfwd>
-#include <iostream>
 
 struct Kvat
 {
