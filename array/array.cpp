@@ -42,13 +42,7 @@ Array& Array::operator=(Array& z)
 }
 int Array::length()
 {
-	int l = size;
-	return l;
-}
-void Array::insert(int z)
-{
-	size++;
-	pdata_[size - 1] = z;
+	return size;
 }
 void Array::remove(int z)
 {
@@ -58,12 +52,39 @@ void Array::remove(int z)
 		{
 			for (ptrdiff_t j = i; j < size - 1; j++)
 				pdata_[j] = pdata_[j + 1];
-			size--;
-			i--;
+			size = size - 1;
+			i = i - 1;
 		}
 	}
 }
-
+void Array::insert_i(ptrdiff_t z, int n)
+{
+	int* pdata_n = new int[size];
+	for (ptrdiff_t i = 0; i < size; i++)
+	{
+		pdata_n[i] = pdata_[i];
+	}
+	size = size + 1;
+	pdata_ = new int[size];
+	for (ptrdiff_t i = 0; i < z; i++)
+	{
+		pdata_[i] = pdata_n[i];
+	}
+	pdata_[z] = n;
+	for (ptrdiff_t i = z + 1; i < size; i++)
+	{
+		pdata_[i] = pdata_n[i - 1];
+	}
+	delete[] pdata_n;
+}
+void Array::remove_i(ptrdiff_t z)
+{
+	for (ptrdiff_t i = z; i < size - 1; i++)
+	{
+		pdata_[i] = pdata_[i + 1];
+	}
+	size = size - 1;
+}
 std::ostream& Array::writeTo(std::ostream& ostrm)
 {
 	for (ptrdiff_t i = 0; i < size; i++)
