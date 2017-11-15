@@ -35,6 +35,5 @@ int main()
 	Kvat j(3, 6, 8, 5);
 	double k = det(j);
 	cout << "j = " << j << endl << "det(j) = " << k << endl;
-	system("pause");
 	return 0;
 }
