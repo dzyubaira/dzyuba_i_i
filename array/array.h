@@ -14,8 +14,9 @@ public:
 	~Array();
 	Array& operator=(Array& z);
 	int length();
-	void insert(int z);
 	void remove(int z);
+	void insert_i(ptrdiff_t z, int n);
+	void remove_i(ptrdiff_t z);
 
 	std::ostream& writeTo(std::ostream& ostrm);
 
