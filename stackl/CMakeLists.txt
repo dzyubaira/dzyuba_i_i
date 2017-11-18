@@ -1,0 +1,1 @@
+add_executable(stackl stackl.cpp stackl.h stackl_test.cpp)
