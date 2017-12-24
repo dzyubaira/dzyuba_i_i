@@ -1,1 +1,0 @@
-add_executable(matrix_r matrix_r.cpp matrix_r.h matrix_r_test.cpp)
