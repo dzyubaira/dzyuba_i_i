@@ -1,6 +1,9 @@
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include "array.h"
+
+using namespace std;
 
 int& Array::operator[] (const ptrdiff_t i)
 {
@@ -8,6 +11,7 @@ int& Array::operator[] (const ptrdiff_t i)
 }
 const int& Array::operator[](const ptrdiff_t i) const
 {
+	if ((i < 0) || (i >= size)) { throw invalid_argument("Error2: Out of range"); }
 	return pdata_[i];
 }
 
@@ -24,6 +28,7 @@ Array::Array(Array& z)
 }
 Array::Array(ptrdiff_t z)
 {
+	if (z <= 0) { throw invalid_argument("Error: Size can't be less or equals 0"); }
 	size = z;
 	pdata_ = new int[size];
 }
