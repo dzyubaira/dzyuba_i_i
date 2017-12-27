@@ -11,7 +11,7 @@ int& Array::operator[] (const ptrdiff_t i)
 }
 const int& Array::operator[](const ptrdiff_t i) const
 {
-	if ((i < 0) || (i >= size)) { throw invalid_argument("Error2: Out of range"); }
+	if ((i < 0) || (i >= size)) { throw invalid_argument("Error: Out of range"); }
 	return pdata_[i];
 }
 
