@@ -5,6 +5,15 @@
 int main()
 {
 	using namespace std;
+	cout << "try Array k(-4)" << endl;
+	try
+	{
+		Array k(-4);
+	}
+	catch (const invalid_argument& except)
+	{
+		cout << except.what() << endl;
+	}
 	Array a(5);
 	a[0] = 4;
 	a[1] = 4;
@@ -12,6 +21,15 @@ int main()
 	a[3] = 7;
 	a[4] = 8;
 	cout << "Array a:  " << a << endl;
+	cout << "try a[-6] = 8" << endl;
+	try
+	{
+		a[-6] = 8;
+	}
+	catch (const invalid_argument& except)
+	{
+		cout << except.what() << endl;
+	}
 	Array b(a);
 	cout << "Array b(a):  " << b << endl;
 	Array c;
