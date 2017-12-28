@@ -23,5 +23,22 @@ int main()
 	cout << "b = b += c " << endl << "b = " << b << endl;
 	b *= c;
 	cout << "b = b *= c " << endl << "b = " << b << endl;
+	try
+	{
+		Matrix_U d(-5, -5);
+	}
+	catch (const invalid_argument& except)
+	{
+		cout << except.what() << endl;
+	}
+	cout << "try c.at(5, 5) = 8" << endl;
+	try
+	{
+		c.at(5, 5) = 8;
+	}
+	catch (const invalid_argument& except)
+	{
+		cout << except.what() << endl;
+	}
 	return 0;
 }
