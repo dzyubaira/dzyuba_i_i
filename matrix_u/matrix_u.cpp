@@ -1,13 +1,18 @@
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include "matrix_u.h"
+
+using namespace std;
 
 int& Matrix_U::at(const ptrdiff_t iRow, const ptrdiff_t iCol)
 {
+	if ((iRow < 0) || (iCol < 0) || (iRow >= nRow_) || (iCol >= nCol_)) { throw invalid_argument("Error: Out of range"); }
 	return pdata_[nCol_ * iRow + iCol];
 }
 const int& Matrix_U::at(const ptrdiff_t iRow, const ptrdiff_t iCol) const
 {
+	if ((iRow < 0) || (iCol < 0) || (iRow >= nRow_) || (iCol >= nCol_)) { throw invalid_argument("Error: Out of range"); }
 	return pdata_[nCol_ * iRow + iCol];
 }
 Matrix_U::Matrix_U()
@@ -16,6 +21,7 @@ Matrix_U::Matrix_U()
 }
 Matrix_U::Matrix_U(ptrdiff_t x, ptrdiff_t y)
 {
+	if ((x <= 0) || (y <= 0)) throw invalid_argument("Error: Size can't be less or equals 0");
 	nRow_ = x;
 	nCol_ = y;
 	pdata_ = new int[nRow_ * nCol_];
