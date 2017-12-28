@@ -1,13 +1,18 @@
 #include <iostream>
 #include <sstream>
-#include "matrix_r.h"
+#include <stdexcept>
+#include "matrix_r.h"  
+
+using namespace std;
 
 int& Matrix_R::at(const ptrdiff_t iRow, const ptrdiff_t iCol)
 {
+	if ((iRow < 0) || (iCol < 0) || (iRow >= nRow_) || (iCol >= nCol_)) { throw invalid_argument("Error: Out of range"); }
 	return pRows_[iRow][iCol];
 }
 const int& Matrix_R::at(const ptrdiff_t iRow, const ptrdiff_t iCol) const
 {
+	if ((iRow < 0) || (iCol < 0) || (iRow >= nRow_) || (iCol >= nCol_)) { throw invalid_argument("Error: Out of range"); }
 	return pRows_[iRow][iCol];
 }
 Matrix_R::Matrix_R()
@@ -21,6 +26,7 @@ Matrix_R::Matrix_R()
 }
 Matrix_R::Matrix_R(ptrdiff_t row, ptrdiff_t col)
 {
+	if ((row <= 0) || (col <= 0)) throw invalid_argument("Error: Size can't be less or equals 0");
 	nRow_ = row;
 	nCol_ = col;
 	pRows_ = new int*[nRow_];
