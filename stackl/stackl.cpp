@@ -4,18 +4,14 @@
 
 StackL::StackL(StackL& z)
 {
-	StackL x;
-	Node* temp = z.pHead_;
-	while (temp != NULL)
+	Node* pCopyFrom = z.pHead_->pNext_;
+	Node* pCopyTo = new Node(NULL, z.pHead_->data_);
+	pHead_ = pCopyTo;
+	while (pCopyFrom != NULL)
 	{
-		x.push(temp->data_);
-		temp = temp->pNext_;
-	}
-	temp = x.pHead_;
-	while (temp != NULL)
-	{
-		push(temp->data_);
-		temp = temp->pNext_;
+		pCopyTo->pNext_ = new Node(NULL, pCopyFrom->data_);
+		pCopyTo = pCopyTo->pNext_;
+		pCopyFrom = pCopyFrom->pNext_;
 	}
 }
 StackL::~StackL()
