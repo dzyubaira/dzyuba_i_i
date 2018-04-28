@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\studying\4 сем\integral\integral\bin\Debug\integral.exe.config
+C:\Users\User\Desktop\studying\4 сем\integral\integral\bin\Debug\integral.exe
+C:\Users\User\Desktop\studying\4 сем\integral\integral\bin\Debug\integral.pdb
+C:\Users\User\Desktop\studying\4 сем\integral\integral\obj\Debug\integral.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\studying\4 сем\integral\integral\obj\Debug\integral.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\studying\4 сем\integral\integral\obj\Debug\integral.exe
+C:\Users\User\Desktop\studying\4 сем\integral\integral\obj\Debug\integral.pdb
+C:\Users\User\Desktop\studying\4 сем\паралы\integral\integral\bin\Debug\integral.exe.config
+C:\Users\User\Desktop\studying\4 сем\паралы\integral\integral\bin\Debug\integral.exe
+C:\Users\User\Desktop\studying\4 сем\паралы\integral\integral\bin\Debug\integral.pdb
+C:\Users\User\Desktop\studying\4 сем\паралы\integral\integral\obj\Debug\integral.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\studying\4 сем\паралы\integral\integral\obj\Debug\integral.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\studying\4 сем\паралы\integral\integral\obj\Debug\integral.exe
+C:\Users\User\Desktop\studying\4 сем\паралы\integral\integral\obj\Debug\integral.pdb

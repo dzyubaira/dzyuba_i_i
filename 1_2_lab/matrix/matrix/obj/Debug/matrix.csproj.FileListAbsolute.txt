@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\studying\4 сем\паралы\matrix\matrix\bin\Debug\matrix.exe.config
+C:\Users\User\Desktop\studying\4 сем\паралы\matrix\matrix\bin\Debug\matrix.exe
+C:\Users\User\Desktop\studying\4 сем\паралы\matrix\matrix\bin\Debug\matrix.pdb
+C:\Users\User\Desktop\studying\4 сем\паралы\matrix\matrix\obj\Debug\matrix.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\studying\4 сем\паралы\matrix\matrix\obj\Debug\matrix.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\studying\4 сем\паралы\matrix\matrix\obj\Debug\matrix.exe
+C:\Users\User\Desktop\studying\4 сем\паралы\matrix\matrix\obj\Debug\matrix.pdb
+C:\Users\User\Desktop\matrix\matrix\bin\Debug\matrix.exe.config
+C:\Users\User\Desktop\matrix\matrix\bin\Debug\matrix.exe
+C:\Users\User\Desktop\matrix\matrix\bin\Debug\matrix.pdb
+C:\Users\User\Desktop\matrix\matrix\obj\Debug\matrix.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\matrix\matrix\obj\Debug\matrix.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\matrix\matrix\obj\Debug\matrix.exe
+C:\Users\User\Desktop\matrix\matrix\obj\Debug\matrix.pdb

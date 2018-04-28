@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\studying\4 сем\паралы\pi\pi\bin\Debug\pi.exe.config
+C:\Users\User\Desktop\studying\4 сем\паралы\pi\pi\bin\Debug\pi.exe
+C:\Users\User\Desktop\studying\4 сем\паралы\pi\pi\bin\Debug\pi.pdb
+C:\Users\User\Desktop\studying\4 сем\паралы\pi\pi\obj\Debug\pi.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\studying\4 сем\паралы\pi\pi\obj\Debug\pi.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\studying\4 сем\паралы\pi\pi\obj\Debug\pi.exe
+C:\Users\User\Desktop\studying\4 сем\паралы\pi\pi\obj\Debug\pi.pdb
